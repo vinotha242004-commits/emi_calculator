@@ -23,11 +23,11 @@ import com.google.android.material.textfield.TextInputLayout
 import java.text.NumberFormat
 import java.util.Locale
 import kotlin.math.pow
-import com.github.mikephil.charting.data.PieEntry
-import com.github.mikephil.charting.charts.PieChart
-import com.github.mikephil.charting.data.PieData
-import com.github.mikephil.charting.data.PieDataSet
-import com.github.mikephil.charting.utils.ColorTemplate
+//import com.github.mikephil.charting.data.PieEntry
+//import com.github.mikephil.charting.charts.PieChart
+//import com.github.mikephil.charting.data.PieData
+//import com.github.mikephil.charting.data.PieDataSet
+//import com.github.mikephil.charting.utils.ColorTemplate
 
 class MainActivity : AppCompatActivity() {
 
@@ -270,7 +270,7 @@ class MainActivity : AppCompatActivity() {
             val newVal=(dest.toString() + source.toString())
             try{
                 val input=newVal.toFloat()
-                if(input in 1.0 ..100.0) null else ""
+                if(input in 0.0 ..100.0) null else ""
             }
             catch (e: NumberFormatException) {
                 ""

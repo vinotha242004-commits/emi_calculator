@@ -41,6 +41,7 @@ android {
 dependencies {
     implementation("com.google.android.material:material:1.12.0")
     implementation("com.github.PhilJay:MPAndroidChart:v3.0.3")
+    implementation("androidx.core:core-splashscreen:1.0.1")
     implementation(libs.appcompat)
     implementation(libs.constraint)
     implementation(libs.androidx.core.ktx)
