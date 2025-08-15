@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/removeButton">
+
+
+
+    <TextView
+        android:id="@+id/monthTextView"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#000"
+        android:background="@drawable/cell_shape"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/principalTextView"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textColor="#000"
+        android:background="@drawable/cell_shape"
+        android:textSize="13sp" />
+
+
+    <TextView
+        android:id="@+id/interestTextView"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textColor="#000"
+        android:background="@drawable/cell_shape"
+        android:textSize="13sp" />
+    <TextView
+        android:id="@+id/totalPaymentTextView"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textColor="#000"
+        android:background="@drawable/cell_shape"
+        android:textSize="13sp" />
+    <TextView
+        android:id="@+id/balanceTextView"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textColor="#000"
+        android:background="@drawable/cell_shape"
+        android:textSize="13sp" />
+    <TextView
+        android:id="@+id/loanPaidtoDateTextView"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textColor="#000"
+        android:background="@drawable/cell_shape"
+        android:textSize="13sp" />
+
+</TableRow>

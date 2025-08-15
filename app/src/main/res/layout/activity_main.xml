@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutLoanAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text"
+        app:shapeAppearance="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLoanAmount"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Loan Amount(₹)"
+            android:imeOptions="actionNext"
+            android:minHeight="@android:dimen/app_icon_size"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutInterestRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etInterestRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Interest Rate(%)"
+                android:inputType="numberDecimal"
+                android:minHeight="@android:dimen/app_icon_size" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="0dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutLoanTenure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etLoanTenure"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:hint="Loan Tenure"
+                android:inputType="number"
+                android:minHeight="@android:dimen/app_icon_size" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatToggleButton
+            android:id="@+id/btnYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/button_selector"
+            android:checked="true"
+            android:textOff="year"
+            android:textOn="year" />
+
+        <androidx.appcompat.widget.AppCompatToggleButton
+            android:id="@+id/btnMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selector"
+            android:checked="false"
+            android:textOff="month"
+            android:textOn="month" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/summaryDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:minHeight="@android:dimen/app_icon_size"
+            android:text="Loan Summary"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/emiText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:minHeight="@android:dimen/app_icon_size"
+            android:text="77777"
+            android:textStyle="italic"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/loanAmountText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:minHeight="@android:dimen/app_icon_size"
+            android:textSize="20dp"
+            android:text="77777"
+            android:textStyle="italic"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/rateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:minHeight="@android:dimen/app_icon_size"
+            android:textSize="20dp"
+            android:text="77777"
+            android:textStyle="italic"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/noOfPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:minHeight="@android:dimen/app_icon_size"
+            android:textSize="20dp"
+            android:text="77777"
+            android:textStyle="italic"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/totalInterestText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:minHeight="@android:dimen/app_icon_size"
+            android:textSize="20dp"
+            android:text="77777"
+            android:textStyle="italic"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/totalPaymentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:minHeight="@android:dimen/app_icon_size"
+            android:textSize="20dp"
+            android:text="77777"
+            android:textStyle="italic"/>
+
+        <Button
+            android:id="@+id/btnViewDeatails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="View Details"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

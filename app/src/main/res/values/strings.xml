@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EMI CALCULATOR</string>
+    <string name="welcome">Welcome,Happy to See You!</string>
+    <string name="loan_amount">Enter Total Loan Amount Here</string>
+    <string name="interest_rate">Enter Interest Rate</string>
+    <string name="tenure">Enter Loan Tenure</string>
+    <string name="month">months</string>
+    <string name="year">years</string>
+    <string name="emi">Your EMI amount is</string>
+    <string name="repayment_table">Loan Repayment Table</string>
+</resources>
